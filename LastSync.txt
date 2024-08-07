@@ -1,8 +1,22 @@
-commit 6d376d6df0bcd37a8d4089217f60edbc243d39e9 (HEAD -> master, origin/master, origin/HEAD)
-Merge: 8d8cfe8 7e94199
-Author: Simon Wunderlich <sw@simonwunderlich.de>
-Date:   Mon Jun 24 14:59:22 2024 +0200
+commit 31e66c083940775508b29b9ec2776db4be3f3633 (HEAD -> master, origin/master, origin/HEAD)
+Author: Rob White <rob@blue-wave.net>
+Date:   Wed Jul 31 09:18:36 2024 +0100
 
-    Merge pull request #1071 from ecsv/batadv-2024.2
+    mesh11sd: update to version 4.1.1
     
-    batman-adv: update packages to version 2024.2
+    Maintainer: Rob White rob@blue-wave.net
+    
+    Compile tested: All
+    
+    Run tested: arm_cortex-a7_neon-vfpv4, mipsel_24kc, mips_24kc, aarch64_cortex-a53;
+        On 23.5 and master/snapshot.
+    
+    Description: mesh11sd (4.1.1)
+    This release provides a critical bug fix.
+    In non-cpe peer mode, if the portal node dhcp6 server fails to respond or cannot be reached,
+    multiple instances of odhcp6c are created, resulting in an eventual oom condition.
+    
+    Details can be found here:
+    https://github.com/openNDS/mesh11sd/releases/tag/v4.1.1
+    
+    Signed-off-by: Rob White <rob@blue-wave.net>
