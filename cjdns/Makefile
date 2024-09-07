@@ -14,6 +14,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+# XXX musl -lssp
+
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cjdns
@@ -37,7 +39,7 @@ define Package/cjdns
 	SUBMENU:=Routing and Redirection
 	TITLE:=Encrypted near-zero-conf mesh routing protocol
 	URL:=https://github.com/cjdelisle/cjdns
-	DEPENDS:=@!arc @IPV6 +libpthread +librt
+	DEPENDS:=@!arc @IPV6 +libnl-tiny +libpthread +librt
 endef
 
 define Package/cjdns/description
