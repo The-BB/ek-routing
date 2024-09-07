@@ -1,6 +1,6 @@
 --- a/sysdep/linux/netlink.c
 +++ b/sysdep/linux/netlink.c
-@@ -493,6 +493,7 @@ static inline ip_addr rta_get_ipa(struct
+@@ -496,6 +496,7 @@ static inline ip_addr rta_get_ipa(struct
      return ipa_from_ip6(rta_get_ip6(a));
  }
  
@@ -8,7 +8,7 @@
  static inline ip_addr rta_get_via(struct rtattr *a)
  {
    struct rtvia *v = RTA_DATA(a);
-@@ -503,7 +504,6 @@ static inline ip_addr rta_get_via(struct
+@@ -506,7 +507,6 @@ static inline ip_addr rta_get_via(struct
    return IPA_NONE;
  }
  
@@ -16,7 +16,7 @@
  static u32 rta_mpls_stack[MPLS_MAX_LABEL_STACK];
  static inline int rta_get_mpls(struct rtattr *a, u32 *stack)
  {
-@@ -771,8 +771,10 @@ nl_parse_multipath(struct nl_parse_state
+@@ -780,8 +780,10 @@ nl_parse_multipath(struct nl_parse_state
        if (a[RTA_FLOW])
  	s->rta_flow = rta_get_u32(a[RTA_FLOW]);
  
@@ -27,7 +27,7 @@
  
        if (nh->rtnh_flags & RTNH_F_ONLINK)
  	rv->flags |= RNF_ONLINK;
-@@ -1677,8 +1679,10 @@ nl_parse_route(struct nl_parse_state *s,
+@@ -1710,8 +1712,10 @@ nl_parse_route(struct nl_parse_state *s,
        if (a[RTA_GATEWAY])
  	ra->nh.gw = rta_get_ipa(a[RTA_GATEWAY]);
  
