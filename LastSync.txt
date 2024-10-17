@@ -1,11 +1,8 @@
-commit 233b3c66374ab4cc3a616a12125d9a55af08f2d6 (HEAD -> master, origin/master, origin/HEAD)
-Author: Patrick Grimm <patrick@lunatiki.de>
-Date:   Sun Aug 25 15:48:05 2024 +0200
+commit 0ff4ab0506f2ab09b829699bef6b8be8bf8f87f1 (HEAD -> master, origin/master, origin/HEAD)
+Merge: cbf0477 9e2c5ae
+Author: Simon Wunderlich <sw@simonwunderlich.de>
+Date:   Wed Oct 16 10:01:31 2024 +0200
 
-    babeld: use an array for routing lists
-    use underscore in key name for libubox/jshn.sh compat
+    Merge pull request #1080 from ecsv/batadv-2024.3
     
-    Fix: openwrt/luci/issues/6342
-    Fix: openwrt/routing/issues/966
-    
-    Signed-off-by: Patrick Grimm <patrick@lunatiki.de>
+    batman-adv: update packages to version 2024.3
