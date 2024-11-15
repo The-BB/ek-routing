@@ -1,8 +1,7 @@
-commit 0ff4ab0506f2ab09b829699bef6b8be8bf8f87f1 (HEAD -> master, origin/master, origin/HEAD)
-Merge: cbf0477 9e2c5ae
-Author: Simon Wunderlich <sw@simonwunderlich.de>
-Date:   Wed Oct 16 10:01:31 2024 +0200
+commit 8f5ed0f95f44f7fdb80fe5b9afd96472d102ad10 (HEAD -> master, origin/master, origin/HEAD)
+Author: 谢致邦 (XIE Zhibang) <Yeking@Red54.com>
+Date:   Wed Nov 13 15:00:59 2024 +0800
 
-    Merge pull request #1080 from ecsv/batadv-2024.3
+    ndppd: update to version 0.2.6
     
-    batman-adv: update packages to version 2024.3
+    Signed-off-by: 谢致邦 (XIE Zhibang) <Yeking@Red54.com>
