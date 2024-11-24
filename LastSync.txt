@@ -1,7 +1,10 @@
-commit 8f5ed0f95f44f7fdb80fe5b9afd96472d102ad10 (HEAD -> master, origin/master, origin/HEAD)
-Author: 谢致邦 (XIE Zhibang) <Yeking@Red54.com>
-Date:   Wed Nov 13 15:00:59 2024 +0800
+commit ff474768d939943b6a540de529b7bf67177314bd (HEAD -> master, origin/master, origin/HEAD)
+Author: Hannu Nyman <hannu.nyman@iki.fi>
+Date:   Fri Nov 22 21:16:30 2024 +0200
 
-    ndppd: update to version 0.2.6
+    bmx7: Make version apk compatible
     
-    Signed-off-by: 谢致邦 (XIE Zhibang) <Yeking@Red54.com>
+    Adjust versioning to match apk semantic rules.
+    (refresh patch)
+    
+    Signed-off-by: Hannu Nyman <hannu.nyman@iki.fi>
