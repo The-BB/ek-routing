@@ -1,10 +1,12 @@
-commit ff474768d939943b6a540de529b7bf67177314bd (HEAD -> master, origin/master, origin/HEAD)
-Author: Hannu Nyman <hannu.nyman@iki.fi>
-Date:   Fri Nov 22 21:16:30 2024 +0200
+commit 0209a1f3be5d0d227c34c7e73ff779ef7dcc533e (HEAD -> master, origin/master, origin/HEAD)
+Author: Toke Høiland-Jørgensen <toke@toke.dk>
+Date:   Fri Dec 6 10:39:42 2024 +0100
 
-    bmx7: Make version apk compatible
+    bird2: Prevent unaligned access on ARM
     
-    Adjust versioning to match apk semantic rules.
-    (refresh patch)
+    Import patch from Freifunk to enable -mno-unaligned-access - see
+    upstream bug report:
     
-    Signed-off-by: Hannu Nyman <hannu.nyman@iki.fi>
+    http://trubka.network.cz/pipermail/bird-users/2024-December/017944.html
+    
+    Signed-off-by: Toke Høiland-Jørgensen <toke@toke.dk>
