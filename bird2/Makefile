@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=bird2
-PKG_VERSION:=2.15.1
-PKG_RELEASE:=2
+PKG_VERSION:=2.16
+PKG_RELEASE:=1
 
 PKG_SOURCE:=bird-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=ftp://bird.network.cz/pub/bird
-PKG_HASH:=48e85c622de164756c132ea77ad1a8a95cc9fd0137ffd0d882746589ce75c75d
+PKG_SOURCE_URL:=https://bird.network.cz/download/
+PKG_HASH:=6629110293af6f1727967121d64f9c8dc94ed6181c4ef8b1dc51c7fdd669871c
 
 PKG_MAINTAINER:=Toke Høiland-Jørgensen <toke@toke.dk>
 PKG_LICENSE:=GPL-2.0-or-later
@@ -121,7 +121,7 @@ define Package/bird2/install
 	$(INSTALL_DIR)  $(1)/opt/sbin
 	$(INSTALL_BIN)  $(PKG_BUILD_DIR)/bird $(1)/opt/sbin/
 	$(INSTALL_DIR)  $(1)/opt/etc
-	$(INSTALL_DATA) ./files/bird.conf $(1)/opt/etc/
+	$(INSTALL_DATA) $(PKG_BUILD_DIR)/doc/bird.conf.example $(1)/opt/etc/bird.conf
 	$(INSTALL_DIR)  $(1)/opt/etc/init.d
 	$(INSTALL_BIN)  ./files/S70bird $(1)/opt/etc/init.d/
 endef
