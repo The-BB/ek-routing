@@ -1,27 +1,22 @@
-commit 5998119c5530fbd4ab844edee3c4da0ea4fec924 (HEAD -> master, origin/master, origin/HEAD)
+commit 4a65e359c301d30b70e448e8c25c6edc9c909be5 (HEAD -> master, origin/master, origin/HEAD)
 Author: Nick Hainke <vincent@systemli.org>
-Date:   Wed Dec 18 19:03:30 2024 +0100
+Date:   Wed Dec 18 00:16:20 2024 +0100
 
-    bird3: add new bird3 package
+    bird2: update to 2.16.1
     
-    This commit introduces the `bird3` package to OpenWrt's routing feed.
-    The package is primarily based on the existing `bird2` package, with
-    minor modifications to accommodate the updates and changes in BIRD
-    3.0.0. I have also added myself as the maintainer for this package.
+    The bird package has been updated to include a patch that directly fixes the
+    alignment issue, which previously required the use of the -mno-unaligned-access
+    GCC flag on ARM processors. This patch, originally discussed on the BIRD mailing
+    list [0], modifies the net_addr structure to resolve the alignment problem
+    without needing the workaround.
     
-    BIRD 3.0.0 is a major release that brings multithreading support,
-    enabling better performance for protocols like BGP, BMP, RPKI, and
-    others. The internal rework has introduced significant changes to the
-    table and channel implementations, while protocol-level functionality
-    remains largely consistent with BIRD 2.16. Although there are minor
-    breaking changes in configuration and CLI, most existing setups should
-    be reusable.
+    By incorporating this patch, the alignment issue is addressed more efficiently,
+    eliminating the performance, code size, and hardware optimization drawbacks
+    associated with the GCC flag.
     
-    Memory usage has increased in this version, with improvements planned
-    for subsequent releases. Migration documentation is available in
-    `doc/migration-bird3.md` from the official BIRD repository.
+    Release Notes:
+    http://trubka.network.cz/pipermail/bird-users/2025-January/018041.html
     
-    For more details, see the official announcement:
-    https://trubka.network.cz/pipermail/bird-users/2024-December/017973.html
+    [0] - http://trubka.network.cz/pipermail/bird-users/2024-December/017957.html
     
     Signed-off-by: Nick Hainke <vincent@systemli.org>
