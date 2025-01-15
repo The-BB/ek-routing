@@ -27,7 +27,7 @@
  
        if (nh->rtnh_flags & RTNH_F_ONLINK)
  	rv->flags |= RNF_ONLINK;
-@@ -1726,8 +1728,10 @@ nl_parse_route(struct nl_parse_state *s,
+@@ -1731,8 +1733,10 @@ nl_parse_route(struct nl_parse_state *s,
        if (a[RTA_GATEWAY])
  	ra->nh.gw = rta_get_ipa(a[RTA_GATEWAY]);
  
