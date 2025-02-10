@@ -1,22 +1,8 @@
-commit 4a65e359c301d30b70e448e8c25c6edc9c909be5 (HEAD -> master, origin/master, origin/HEAD)
-Author: Nick Hainke <vincent@systemli.org>
-Date:   Wed Dec 18 00:16:20 2024 +0100
+commit dbf46e76eba383a76334bc06925cd69abdac55fc (HEAD -> master, origin/master, origin/HEAD)
+Merge: 4a65e35 eb01d8f
+Author: Simon Wunderlich <sw@simonwunderlich.de>
+Date:   Sat Feb 8 13:25:36 2025 +0100
 
-    bird2: update to 2.16.1
+    Merge pull request #1103 from ecsv/batadv-2025.0
     
-    The bird package has been updated to include a patch that directly fixes the
-    alignment issue, which previously required the use of the -mno-unaligned-access
-    GCC flag on ARM processors. This patch, originally discussed on the BIRD mailing
-    list [0], modifies the net_addr structure to resolve the alignment problem
-    without needing the workaround.
-    
-    By incorporating this patch, the alignment issue is addressed more efficiently,
-    eliminating the performance, code size, and hardware optimization drawbacks
-    associated with the GCC flag.
-    
-    Release Notes:
-    http://trubka.network.cz/pipermail/bird-users/2025-January/018041.html
-    
-    [0] - http://trubka.network.cz/pipermail/bird-users/2024-December/017957.html
-    
-    Signed-off-by: Nick Hainke <vincent@systemli.org>
+    batman-adv: update packages to version 2025.0
