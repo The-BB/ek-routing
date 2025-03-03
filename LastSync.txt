@@ -1,8 +1,25 @@
-commit dbf46e76eba383a76334bc06925cd69abdac55fc (HEAD -> master, origin/master, origin/HEAD)
-Merge: 4a65e35 eb01d8f
-Author: Simon Wunderlich <sw@simonwunderlich.de>
-Date:   Sat Feb 8 13:25:36 2025 +0100
+commit 5d1d38a60590488841384214d0403fd93ed8ce22 (HEAD -> master, origin/master, origin/HEAD)
+Author: Rob White <rob@blue-wave.net>
+Date:   Sun Mar 2 13:42:20 2025 +0000
 
-    Merge pull request #1103 from ecsv/batadv-2025.0
+    mesh11sd: update to version 5.0.1
     
-    batman-adv: update packages to version 2025.0
+    Maintainer: Rob White rob@blue-wave.net
+    
+    Compile tested: All
+    
+    Run tested: arm_cortex-a7_neon-vfpv4, mipsel_24kc, mips_24kc, aarch64_cortex-a53;
+    On 23.5, 24.10 and master/snapshot.
+    
+    Description: mesh11sd (5.0.1)
+    
+    This is a major release, with additional minor fixes.
+    It introduces significant new functionality,
+    including point to multipoint vxlan tunneling
+    and a Centralised Access Point usage database.
+    
+    The full changelog can be seen here:
+    https://github.com/openNDS/mesh11sd/blob/v5.0.1/ChangeLog
+    
+    
+    Signed-off-by: Rob White <rob@blue-wave.net>
