@@ -1,25 +1,21 @@
-commit 5d1d38a60590488841384214d0403fd93ed8ce22 (HEAD -> master, origin/master, origin/HEAD)
+commit 2fb5af6b55c2132a00fb1d98c6828601333372d7 (HEAD -> master, origin/master, origin/HEAD)
 Author: Rob White <rob@blue-wave.net>
-Date:   Sun Mar 2 13:42:20 2025 +0000
+Date:   Thu Mar 6 09:32:08 2025 +0000
 
-    mesh11sd: update to version 5.0.1
+    opennds: update to version 10.3.1
     
     Maintainer: Rob White rob@blue-wave.net
     
-    Compile tested: All
+    Compile tested: arm_cortex-a7_neon-vfpv4, mipsel_24kc, aarch64_cortex-a53, x86-64
     
-    Run tested: arm_cortex-a7_neon-vfpv4, mipsel_24kc, mips_24kc, aarch64_cortex-a53;
-    On 23.5, 24.10 and master/snapshot.
+    Run tested: arm_cortex-a7_neon-vfpv4, mipsel_24kc, mips_24kc, aarch64_cortex-a53, x86-64 ;
+            On 23.5, 24.10 and master/snapshot.
     
-    Description: mesh11sd (5.0.1)
+    Description: opennds (10.3.1) - This version is a bugfix update.
+    Most importantly, this release fixes the issue where libmicrohttpd version 1.0.0 or higher prevented the openNDS daemon from starting.
+    Numerous other minor fixes are also included.
     
-    This is a major release, with additional minor fixes.
-    It introduces significant new functionality,
-    including point to multipoint vxlan tunneling
-    and a Centralised Access Point usage database.
-    
-    The full changelog can be seen here:
-    https://github.com/openNDS/mesh11sd/blob/v5.0.1/ChangeLog
-    
+    Details can be found here:
+    https://github.com/openNDS/openNDS/releases/tag/v10.3.1
     
     Signed-off-by: Rob White <rob@blue-wave.net>
