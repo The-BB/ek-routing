@@ -1,8 +1,10 @@
-commit f1ec6fdd9a017cdec5bd9e24a3df9a7fe54212bc (HEAD -> master, origin/master, origin/HEAD)
-Merge: 2fb5af6 9ad1ff1
-Author: Simon Wunderlich <sw@simonwunderlich.de>
-Date:   Tue Apr 22 11:27:16 2025 +0200
+commit 8bda1bc2fcb71219c44d8c128a734aa6c6fc6074 (HEAD -> master, origin/master, origin/HEAD)
+Author: Nick Hainke <vincent@systemli.org>
+Date:   Mon Apr 28 09:03:10 2025 +0200
 
-    Merge pull request #1110 from ecsv/batadv-2025.1
+    bird2: update to 2.17
     
-    batman-adv: update packages to version 2025.1
+    Release Notes:
+    https://bird.network.cz/pipermail/bird-users/2025-April/018156.html
+    
+    Signed-off-by: Nick Hainke <vincent@systemli.org>
