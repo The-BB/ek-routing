@@ -1,10 +1,10 @@
-commit 8bda1bc2fcb71219c44d8c128a734aa6c6fc6074 (HEAD -> master, origin/master, origin/HEAD)
+commit a98c2bb49d123f7906a3c416a1623d3fb699b74a (HEAD -> master, origin/master, origin/HEAD)
 Author: Nick Hainke <vincent@systemli.org>
-Date:   Mon Apr 28 09:03:10 2025 +0200
+Date:   Sun May 11 20:52:06 2025 +0200
 
-    bird2: update to 2.17
+    bird2: update to 2.17.1
     
     Release Notes:
-    https://bird.network.cz/pipermail/bird-users/2025-April/018156.html
+    https://bird.network.cz/pipermail/bird-users/2025-May/018195.html
     
     Signed-off-by: Nick Hainke <vincent@systemli.org>
