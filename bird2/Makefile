@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=bird2
-PKG_VERSION:=2.17
+PKG_VERSION:=2.17.1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=bird-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://bird.network.cz/download/
-PKG_HASH:=79bbcc77c63e9e1b7a10a48389c86f4f75b053fd3dec48e3c6cbe0df1ba81eb3
+PKG_HASH:=bfd718dfa596819b3801688783212514b467163329aec9bbcd0fa3dee03e10e9
 
 PKG_MAINTAINER:=Toke Høiland-Jørgensen <toke@toke.dk>
 PKG_LICENSE:=GPL-2.0-or-later
@@ -102,10 +102,6 @@ endef
 CONFIGURE_ARGS += \
 	--disable-libssh \
 	--with-iproutedir=/opt/etc/iproute2
-
-CONFIGURE_VARS += \
-	ac_cv_func_getentropy=no \
-	ac_cv_func_getrandom=no
 
 define Package/bird2/conffiles
 /opt/etc/bird.conf
