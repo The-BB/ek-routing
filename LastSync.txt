@@ -1,10 +1,18 @@
-commit a98c2bb49d123f7906a3c416a1623d3fb699b74a (HEAD -> master, origin/master, origin/HEAD)
-Author: Nick Hainke <vincent@systemli.org>
-Date:   Sun May 11 20:52:06 2025 +0200
+commit 9eda32a8c96fc184e6b208a54dbf43a1379fa0be (HEAD -> master, origin/master, origin/HEAD)
+Author: Rob White <rob@blue-wave.net>
+Date:   Tue May 13 11:16:08 2025 +0100
 
-    bird2: update to 2.17.1
+    mesh11sd: update to version 5.1.0
+    This is a minor release, with some minor fixes. It introduces some new functionality, including the following:
     
-    Release Notes:
-    https://bird.network.cz/pipermail/bird-users/2025-May/018195.html
+       * Add - option mesh_phyindex to force selection of phy for mesh interface
+       * Add - footnote links to README.md, using double spaces for newlines
+       * Add - auto leechmode to mesh path stabilisation
+       * Add - mesh_leechmode sets mesh_max_peerlinks to 1
+       * Add - restart opennds captive portal if it is installed and running when mesh11sd starts, to sync the nftables rulesets of both packages.
     
-    Signed-off-by: Nick Hainke <vincent@systemli.org>
+    The full changelog can be seen here:
+    https://github.com/openNDS/mesh11sd/blob/v5.1.0/ChangeLog
+    
+    
+    Signed-off-by: Rob White <rob@blue-wave.net>
