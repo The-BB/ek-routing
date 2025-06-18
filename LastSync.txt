@@ -1,24 +1,20 @@
-commit bd56cdc36a5fe506c2b79340f1b996ca712c32c6 (HEAD -> master, origin/master, origin/HEAD)
-Author: Rob White <rob@blue-wave.net>
-Date:   Mon May 26 11:58:55 2025 +0100
+commit 6aed281d791d3834284d5798c3ccd2df50c40fba (HEAD -> master, origin/master, origin/HEAD)
+Author: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Date:   Tue Jun 17 08:06:18 2025 +0200
 
-    mesh11sd: update to version 5.1.3
+    batmand: update to 2022-12-31 and simplify Makefile
     
-    Maintainer: Rob White rob@blue-wave.net
+    Patches:
+    - 0001-Allow-one-to-disable-forking-to-background-in-debug_.patch
+    is included in the upstream [1]
     
-    Compile tested: All
+    - 0002-batmand-Add-missing-string.h-include.patch
+    is included in the upstream [2]
     
-    Run tested: arm_cortex-a7_neon-vfpv4, mipsel_24kc, mips_24kc, aarch64_cortex-a53; On 23.5, 24.10 and master/snapshot.
+    Makefile is simplified, reordered to be able to move this package
+    to packages feed.
     
-    Description: mesh11sd (5.1.2)
+    [1] https://git.open-mesh.org/batmand.git/commit/?id=2f62b17d4132f82c4716b672101eb7faa916192a
+    [2] https://git.open-mesh.org/batmand.git/commit/linux?id=aca79f595d20ed8ed5efa204c87f30174d5b4228
     
-    This is a minor bugfix release.
-    It includes:
-     * Fix when converting from/to local administered mac if the first octet is 0
-     * Fix and improve detection of portal state changes
-     * Ensure dhcp is disabled on vtunnel when changing to peer mode
-    
-    The full changelog can be seen here:
-    https://github.com/openNDS/mesh11sd/blob/v5.1.3/ChangeLog
-    
-    Signed-off-by: Rob White <rob@blue-wave.net>
+    Signed-off-by: Josef Schlehofer <pepe.schlehofer@gmail.com>
