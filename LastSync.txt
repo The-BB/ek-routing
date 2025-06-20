@@ -1,20 +1,8 @@
-commit 6aed281d791d3834284d5798c3ccd2df50c40fba (HEAD -> master, origin/master, origin/HEAD)
-Author: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Date:   Tue Jun 17 08:06:18 2025 +0200
+commit 8a6c623fd99e89950d5c2c663b10393b215d2579 (HEAD -> master, origin/master, origin/HEAD)
+Merge: 85b868b 131f3e0
+Author: Simon Wunderlich <sw@simonwunderlich.de>
+Date:   Thu Jun 19 09:41:57 2025 +0200
 
-    batmand: update to 2022-12-31 and simplify Makefile
+    Merge pull request #1132 from ecsv/batadv-2025.2
     
-    Patches:
-    - 0001-Allow-one-to-disable-forking-to-background-in-debug_.patch
-    is included in the upstream [1]
-    
-    - 0002-batmand-Add-missing-string.h-include.patch
-    is included in the upstream [2]
-    
-    Makefile is simplified, reordered to be able to move this package
-    to packages feed.
-    
-    [1] https://git.open-mesh.org/batmand.git/commit/?id=2f62b17d4132f82c4716b672101eb7faa916192a
-    [2] https://git.open-mesh.org/batmand.git/commit/linux?id=aca79f595d20ed8ed5efa204c87f30174d5b4228
-    
-    Signed-off-by: Josef Schlehofer <pepe.schlehofer@gmail.com>
+    batman-adv: update packages to version 2025.2
