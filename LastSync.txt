@@ -1,8 +1,10 @@
-commit 8a6c623fd99e89950d5c2c663b10393b215d2579 (HEAD -> master, origin/master, origin/HEAD)
-Merge: 85b868b 131f3e0
-Author: Simon Wunderlich <sw@simonwunderlich.de>
-Date:   Thu Jun 19 09:41:57 2025 +0200
+commit d0f6265f6f32d44753c22474c11cc16a76a5d512 (HEAD -> master, origin/master, origin/HEAD)
+Author: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Date:   Mon Jun 16 22:49:29 2025 +0200
 
-    Merge pull request #1132 from ecsv/batadv-2025.2
+    bird{2,3}: use HTTPS in URL and reorder Makefile
     
-    batman-adv: update packages to version 2025.2
+    Move descriptions to each other
+    and use HTTPS for project website
+    
+    Signed-off-by: Josef Schlehofer <pepe.schlehofer@gmail.com>
