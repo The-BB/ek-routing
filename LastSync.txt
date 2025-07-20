@@ -1,10 +1,7 @@
-commit d0f6265f6f32d44753c22474c11cc16a76a5d512 (HEAD -> master, origin/master, origin/HEAD)
-Author: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Date:   Mon Jun 16 22:49:29 2025 +0200
+commit d53907107d48331ef38978f7a259bc8eac3765a0 (HEAD -> master, origin/master, origin/HEAD)
+Author: Fabrice Fontaine <fontaine.fabrice@gmail.com>
+Date:   Mon Jun 16 15:29:02 2025 +0200
 
-    bird{2,3}: use HTTPS in URL and reorder Makefile
+    opennds: Add PKG_CPE_ID
     
-    Move descriptions to each other
-    and use HTTPS for project website
-    
-    Signed-off-by: Josef Schlehofer <pepe.schlehofer@gmail.com>
+    Signed-off-by: Fabrice Fontaine <fontaine.fabrice@gmail.com>
