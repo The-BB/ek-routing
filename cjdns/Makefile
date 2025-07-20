@@ -87,6 +87,10 @@ ifeq ($(or $(CONFIG_GCC_USE_VERSION_12),$(CONFIG_GCC_USE_VERSION_13)),y)
 TARGET_CFLAGS += -Wno-error=dangling-pointer
 endif
 
+ifeq ($(CONFIG_GCC_USE_VERSION_14),y)
+TARGET_CFLAGS += -Wno-error=calloc-transposed-args
+endif
+
 define Build/Compile
 	$(INSTALL_DIR) $(PKG_BUILD_DIR)/tmp
 	(cd $(PKG_BUILD_DIR) && \
